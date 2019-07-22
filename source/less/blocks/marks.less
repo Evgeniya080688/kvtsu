@@ -1,0 +1,308 @@
+.bread_crumps {
+    float: left;
+    height: auto;    
+    span {
+        color: @color-gray;
+    }
+    a {
+        float: left; 
+        //height: 1.6em
+        line-height: 1.6em;
+        position: relative;
+        font-size: 0.8em;
+        margin: 0 0.3em 0.3em 0.5em;
+        padding: 0 0.3em 0 0.5em;
+        background: none;
+        color: @color-gray;
+        text-decoration: none;
+        &:before {
+            content: "/ ";
+            float: left;
+            position: absolute;
+            top: 0;
+            left: -0.4em;
+            width: 0;
+            height: 0;
+        }    
+        &:hover {
+            color: @color-darkgray;
+        }
+    }        
+    p {
+        float: left;
+        //height: 1.6em
+        line-height: 1.6em;
+        position: relative;
+        font-size: 0.8em;
+        margin: 0 0.3em 0.3em 0.5em;
+        padding: 0 0.3em 0 0.5em;
+        background: none;
+        color: @color-darkgray;
+        text-decoration: none;
+        &:before {
+            content: "/ ";
+            float: left;
+            position: absolute;
+            top: 0;
+            left: -0.4em;
+            width: 0;
+            height: 0;
+        }    
+    }        
+}
+
+.entry_content {
+    overflow: hidden;
+    padding: 1em 0;
+    padding-bottom: 0;
+    margin-bottom: 15px;
+}    
+.entry_wrapper {
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 1.5em;
+    span {
+        height: 1.3em;
+        line-height: 1.3em;
+        font-size: 1em;
+        display: block;
+        float: left;
+        margin-right: 0.1em;
+    }    
+}  
+
+.entry_tags {
+    float: left;
+    a {
+        float: left;
+        height: 1.6em;
+        line-height: 1.6em;
+        position: relative;
+        font-size: 0.8em;
+        margin: 0 0.5em 0.5em 1.2em;
+        padding: 0 1em 0 1.2em;
+        background: @color-gray;
+        color: @color-white;
+        text-decoration: none;
+        &:before {
+            content: " ";
+            float: left;
+            position: absolute;
+            top: 0;
+            left: -0.8em;
+            width: 0;
+            height: 0;
+            border-top-color: transparent !important;
+            border-right-color: @color-gray;
+            border-bottom-color: transparent !important;
+            border-left-color: transparent !important;
+            border-style: solid;
+            border-width: 0.8em 0.8em 0.8em 0;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+        }    
+        &:after {
+            content: " ";
+            position: absolute;
+            top: 0.6em;
+            left: 0;
+            float: left;
+            width: 0.4em;
+            height: 0.4em;
+            background: @color-white;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }    
+        &:hover {
+            background: @color-darkgray;
+            &:before {
+                border-right-color: @color-darkgray;
+            }
+        }    
+    }            
+    p {
+        float: left;
+        height: 1.6em;
+        line-height: 1.6em;
+        position: relative;
+        font-size: 0.8em;
+        margin: 0 0.5em 0.5em 1.2em;
+        padding: 0 1em 0 1.2em;
+        background: @color-darkgray;
+        color: @color-white;
+        text-decoration: none;
+        &:before {
+            content: " ";
+            float: left;
+            position: absolute;
+            top: 0;
+            left: -0.8em;
+            width: 0;
+            height: 0;
+            border-top-color: transparent !important;
+            border-right-color: @color-darkgray;
+            border-bottom-color: transparent !important;
+            border-left-color: transparent !important;
+            border-style: solid;
+            border-width: 0.8em 0.8em 0.8em 0;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+        }    
+        &:after {
+            content: " ";
+            position: absolute;
+            top: 0.6em;
+            left: 0;
+            float: left;
+            width: 0.4em;
+            height: 0.4em;
+            background: @color-white;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }    
+    }
+}
+
+.tag-new {
+    float: right;
+    p {
+        float: left;
+        height: 1.6em;
+        line-height: 1.6em;
+        position: relative;
+        font-size: 1em;
+        text-transform: uppercase;
+        margin: 0 0.5em 0 0em;
+        padding: 0 0.5em 0 0.1em;
+        color: @color-green;
+    }    
+    span {
+        height: 1.2em;
+        line-height: 1.2em;
+        font-size: 1.1em;
+        color: @color-green;
+    }    
+}
+
+.tag-soon {
+    float: right;
+    p
+        float: left;
+        height: 1.6em;
+        line-height: 1.6em;
+        position: relative;
+        font-size: 1em;
+        text-transform: uppercase;
+        margin: 0 0.5em 0 0em;
+        padding: 0 0.5em 0 0.1em;
+        text-decoration: none;
+        color: @color-soon;
+    span {
+        color: @color-soon;
+    }   
+}
+
+.entry_tags.categories {
+    float: right;
+}
+
+
+.onsale {
+    z-index: 1;
+    height: 1.6em;
+    line-height: 1.6em;
+    font-size: 0.8em;
+    margin: 0 0.5em 0.5em 0.5em;
+    padding: 0 1em 0 1.2em;
+    background: rgba(32, 178, 30, 0.7);
+    color: @color-white;
+    text-decoration: none;
+    position: absolute;
+    top: 0.31em;
+    left: 0em;
+}    
+
+.soon {
+    z-index: 1;
+    height: 1.6em;
+    line-height: 1.6em;
+    font-size: 0.8em;
+    margin: 0 0.5em 0.5em 0.5em;
+    padding: 0 1em 0 1.2em;
+    background: rgba(255, 193, 7, 1);
+    color: @color-white;
+    text-decoration: none;
+    position: absolute;
+    top: 0.31em;
+    left: 0em;
+}    
+
+.feature {
+    z-index: 1;
+    height: 1.6em;
+    line-height: 1.6em;
+    font-size: 0.8em;
+    margin: 0 0.5em 0.5em 0.5em;
+    padding: 0 1em 0 1.2em;
+    background: rgba(0, 191, 255, 0.7);
+    color: @color-white;
+    text-decoration: none;
+    position: absolute;
+    top: 0.31em;
+    right: 0;
+}    
+
+.default {
+    z-index: 1;
+    height: 1.6em;
+    line-height: 1.6em;
+    font-size: 0.8em;
+    margin: 0 0.5em 0.5em 0.5em;
+    padding: 0 1em 0 1.2em;
+    background: rgba(0, 0, 0, 0.5);
+    color: @color-white;
+    text-decoration: none;
+    position: absolute;
+    top: 0.31em;
+    left: 0em;
+}    
+
+.glw {
+    z-index: 1;
+    font-size: 0.8em;
+    height: auto;
+    width: 6em;
+    margin: 0 0.5em 0.5em 0.5em;
+    background: transparent;
+    position: absolute;
+    bottom: 0.31em;
+    right: 0.31em;
+    opacity: 0.5;
+    img {
+        position: relative;
+        bottom: 0;
+    }    
+}        
+
+.ff {
+    z-index: 1;
+    font-size: 0.8em;
+    height: auto;
+    width: 6em;
+    margin: 0 0.5em 0.5em 0.5em;
+    background: transparent;
+    position: absolute;
+    bottom: 0.31em;
+    right: 0.31em;
+    opacity: 0.5;
+    img {
+        position: relative;
+        bottom: 0;
+    }    
+}        

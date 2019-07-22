@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  width: 100%;
+  margin: 0;
+  background-color: @color-white;
+  font-family: 'Play', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: @color-middlegray;
+  &.modal-active {
+    overflow: hidden;
+  }
+}
+
+.wide {
+    background-color: @color-white;
+    width: 100%;
+}       
+
+img {
+  outline: 0;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*-- 8. Panel title--*/
+.panel_title {
+    margin-bottom: 1em;
+    display: block;
+    box-sizing: content-box;
+    overflow: visible;
+    div {
+        background-color: @color-lightgray;
+        height: auto;
+        line-height: 1em;
+        margin-bottom: 0.31em;
+        h2 {
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-right: 0.63em;
+            font-size: 1.15em;
+            line-height: 1.1em;
+            background-color: @color-white;
+            display: inline-block;
+            box-sizing: content-box;
+            margin: 0;
+            margin-top: -0.25em;
+        }    
+    }        
+    span {
+        font-size: 0.88em;
+        color: @color-gray;
+    }    
+}        
+
+/*--9. Page title--*/
+h1.page_title {
+    font-size: 1.7em;
+    line-height: 1.7em;
+    margin-bottom: 0.5em;
+    margin-top: 0em;
+}
+
+h3.page_title {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-left: 0;
+    text-align: left;
+    padding-left: 0;
+    display: block;
+}    
+
+

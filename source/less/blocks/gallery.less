@@ -1,0 +1,294 @@
+.popup-gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    & a {
+        &:hover {
+            & img {
+                box-shadow: 0 0 0.38em 0.19em @color-orange;             
+            }
+        }
+    }
+}
+
+.popup-gallery-extra {
+    justify-content: space-around;
+}
+
+.popup-gallery-drawing {
+    justify-content: flex-start;
+    margin: 1em;
+    .draw-image {
+        background-color: @color-white;
+    }
+    & a {
+        background-color: @color-white;
+        max-width: 70%;
+        height: auto;
+        & img {
+            width: 100%;
+        }
+    }        
+}
+
+.images {
+    position: relative;
+    padding-top: 2em;
+    .popup-gallery-main {
+        a {
+            max-width: 100%;
+            padding: auto;
+            img {
+                max-width: 80%;
+            }
+        }        
+    }
+}                
+
+.images-photoalbum {
+    padding-top: 0em;
+}
+
+.head-banner {
+    max-width: 100%;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: relative;
+    img {
+        max-width: 100%;
+        z-index: 1;
+    }    
+    .head-banner__caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding: 1.5em 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: @color-white;
+        h1 {
+            color: @color-white;
+            font-size: 3em;
+        }    
+    }    
+}            
+
+h1.gray-style {
+    color: @color-darkgray;
+}
+
+.gray-style {
+    color: @color-darkgray;
+}
+
+.views3d {
+    font-size: 1.5em;
+    height: 1.5em;
+    padding: 0.3em;
+    position: absolute;
+    top: 1.6em;
+    right: 0.3em;
+    color: @color-white;
+    background: rgba(32, 178, 30, 0.7);
+    i {
+        padding-right: 0.3em;
+    }
+    a {
+        color: @color-white;
+    }
+    &:hover {
+        background: @color-orange;      
+    }
+}
+
+.comment-image {
+    height: 13em;
+    margin: 0.3em;
+}
+
+.extra-image {
+    height: 7.5em;
+    margin: 0.3em;
+}
+
+.popup-gallery-photoalbum {
+    justify-content: flex-start;
+    a {
+        display: block;
+        width: 180px;
+        height: 180px;
+        overflow: hidden;
+        border: 0.1em solid @color-lightgray;
+        background-color: @color-lightgray;
+        margin-right: 0.3em;
+        margin-bottom: 0.3em;
+        &:hover {
+            & img {
+                box-shadow: none;
+                opacity: 0.5;
+            }    
+        }
+    }            
+}                
+
+.photoalbum-image {
+    object-fit: cover;
+}
+
+.image-horiz {
+    height: 190px;
+}
+ 
+.image-vert {
+    width: 190px;
+}
+
+.photoalbum-cover {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .top_review {
+        width: 24%;
+        padding: 0;
+        margin-right: 0.6em;
+        padding: 0;
+        background-color: @color-white;
+        position: relative;
+        .item_content {
+            padding: 0;
+            margin: 0;
+            .hover_effect {
+                padding: 0;
+                margin: 0;
+                position: relative;
+                border: 1px solid @color-gray;
+                .alb_description {
+                    position: absolute;
+                    top: 30%;
+                    left: 0;
+                    right: 0;
+                    align-self: center;
+                    color: @color-black;
+                    margin-right: 1em;
+                    margin-left: 1em;
+                    h3 {
+                        text-align: center;
+                    }
+                    p {
+                        font-style: italic;
+                    }
+                }        
+                img {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                }    
+            }        
+            .content_description {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                font-size: 1em;
+                color: @color-white;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                background: rgba(0, 191, 255, 0.7);
+                .description_title {
+                    padding-left: 0.5em;
+                    padding-bottom: 0.5em;
+                    padding-top: 0.5em;
+                    font-size: 1em;
+                    font-family: @font-head;
+                    text-align: left;
+                }    
+                .description_count {
+                    padding-right: 0.5em;
+                    padding-bottom: 0.5em;
+                }    
+            }        
+        }              
+    }                                  
+}
+
+.article-image {
+    width: 20em;
+    margin: 0.3em;
+}    
+
+/*-    Images */
+.alignleft {
+    display: inline;
+    float: left;
+    margin: 0.31em 1.3em 0.63em 0;
+}    
+
+.alignright {
+    display: inline;
+    float: right;
+    margin: 0.31em 0 0.63em 1.3em;
+}    
+
+.aligncenter {
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}    
+
+.wp-caption {
+    border: 0.063em solid @color-lightgray;
+    padding: 0.63em;
+    max-width: 100%;
+    background: @color-white;
+}    
+
+.wp-caption img {
+    margin: 0;
+}
+
+.wp-caption-text {
+    text-align: center;
+    color: @color-gray;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 0.31em 0 0 0;
+}    
+
+.contacts-employers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .employer-item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2em;
+        margin-bottom: 1em;
+        width: 20%;
+        .employer-img {
+            display: block;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }    
+        .employer-info {
+            padding: 0.5em;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }    
+    }        
+}            
+
+.image404 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: -2.5em;
+}    

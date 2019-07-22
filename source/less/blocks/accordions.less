@@ -1,0 +1,140 @@
+/*-16.6 Accordions-*/
+.accordion_block {
+    display: flex;
+    margin-bottom: 1em;
+}    
+
+.accordion {
+    width: 100%;
+    margin-right: 0em; 
+    margin-top: 0.3em; 
+    margin-bottom: 0.3em;          
+    .fa-hand-o-right {
+        margin-right: 0.5em;
+    }
+}    
+
+.accordion_title {
+    background-color: #eee;
+    padding: 0.94em;
+    padding-right: 3em;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    font-size: 1em;
+    margin: 0;
+    min-height: 3em;
+    .fa {
+        margin-right: 0.5em;
+    }
+    &:after {
+        font-family: "FontAwesome";
+        content: "\f107";
+        right: 0;
+        top: 0;
+        display: block;
+        width: 3em;
+        height: 3em;
+        line-height: 3em;
+        color: #999;
+        position: absolute;
+        background-color: #eee;
+        text-align: center;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+        .active {
+            content: "\f106";
+        }
+    }        
+ }           
+
+.faq_title {
+    background-color: #eee;
+    padding: 0.94em;
+    padding-right: 2.5em;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    font-size: 1em;
+    margin: 0;
+    min-height: 3em;
+    .fa {
+        margin-right: 0.5em;
+    }
+    &:after {
+        font-family: "FontAwesome";
+        content: "\f107";
+        right: 0;
+        top: 0;
+        display: block;
+        width: 3em;
+        height: 3em;
+        line-height: 3em;
+        color: #999;
+        position: absolute;
+        background-color: #eee;
+        text-align: center;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+        .active {
+            content: "\f106";
+        }
+    }        
+}            
+
+.accordion_content {
+    display: none;
+}
+
+.accordion_content.active_accordion {
+    display: block;
+}
+
+.accordion_title.active {
+    &:after {
+        content: "\f106";
+    }
+}
+    
+/*- Стиль ссылок внутри аккордеона-*/
+.accordion_content a {
+    color: @color-hoverblue;
+    text-decoration: underline;
+    &:hover {
+        color: @color-accent;
+    }
+}        
+
+.accordion_content {
+    margin-bottom: 1.5em;
+    margin-right: 0.5em;
+    .accordion_content_inner {
+        margin-bottom: 0em;
+        visibility: hide;
+        ul {
+            margin-bottom: 0.1em;
+        }
+    }        
+}            
+
+.list-regions-mob {
+    display: flex;
+    flex-flow: column wrap;
+    overflow: visible;
+    height: 33em;
+    width: 100%;
+}    
+
+.list-regions-title-mob {
+    display: block;
+}
+
+
+                  
+

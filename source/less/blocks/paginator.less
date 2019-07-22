@@ -1,0 +1,47 @@
+/*-    12. Pagination-*/
+ul.page-numbers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    overflow: hidden;
+}    
+
+ul.page-numbers li {
+    float: left;
+    margin: 0 0.25em 0.25em 0;
+}    
+
+ul.page-numbers li a {
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    background-color: @color-lightgray;
+}    
+
+ul.page-numbers li a:hover {
+    color: @color-soon;
+    background-color: @color-black;
+}    
+
+ul.page-numbers li span.current {
+    color: @color-white;
+    display: block;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+    height: 3em;
+    background-color: @color-soon;
+}    
+
+ul.page-numbers li span.number-noneactive {
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    background-color: @color-lightgray;
+    color: @color-gray;
+}

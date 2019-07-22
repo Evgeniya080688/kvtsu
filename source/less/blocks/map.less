@@ -1,0 +1,57 @@
+.link-regions {
+	position: relative;
+	height: 13em;
+	overflow: hidden;	
+	text-align: center;
+	transition: 0.4s;	
+	.overlay {
+		position: absolute;
+		left: 0;
+		top: 0;				
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.9));
+		transition: 0.4s;
+	}		
+	img
+		width: 70%;
+		filter: blur(3px);
+		transition: 0.4s;
+		&:hover {
+			filter: blur(0px);			
+		}
+	&:hover {
+		height: 27em;
+		cursor: pointer;
+		.overlay {
+			background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.2));
+		}
+		img {
+			filter: blur(0px);			
+		}
+	}		
+}
+
+.btn_region {
+	position: absolute;
+	top: 3em;
+	left: 0;
+	background-color: rgba(255,193,7,0.8);
+	color: @color-dark;
+	&:hover {
+		background-color: rgba(255,193,7,0.5);
+		color: @color-dark;
+	}		
+}
+
+.sales-regions {
+	width: 25%;
+	left: 3em;
+	border: 2px solid red;
+}	
+
+article.post .article_style a.btn_region {
+	color: @color-dark;
+	text-decoration: none;
+}
+

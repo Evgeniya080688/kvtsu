@@ -1,0 +1,137 @@
+/*!
+ * jQVMap Version 1.0 
+ *
+ * http://jqvmap.com
+ *
+ * Copyright 2012, Peter Schmalfeldt <manifestinteractive@gmail.com>
+ * Licensed under the MIT license.
+ *
+ * Fork Me @ https://github.com/manifestinteractive/jqvmap
+ */
+#vmap {
+    cursor: pointer;
+    margin-top: -140px;  
+    z-index: 0; 
+    background-color: transparent;
+}
+
+.map-colors {
+	display: block;
+	position: relative;
+	z-index: 5;
+
+}
+
+.map-colors-russia{	
+	padding-left: 25px;	
+}
+
+.map-colors-russiano {
+	padding-left: 25px;}
+
+.map-colors-abroad {	
+	padding-left: 25px;
+}
+
+.map-colors-russia:after {
+	font-family: "FontAwesome";
+	font-size: 20px;
+    content: "";			
+	position: absolute;
+	display: block;
+	padding: 10px;
+	min-height: 20px;
+	background-color: #0A4C82;
+	top: 0;
+	left: 0px;
+}
+/*
+
+.map-colors-russiano:after{
+	font-family: "FontAwesome";
+	font-size: 20px;
+    content: "";			
+	position: absolute;
+	display: block;
+	padding: 10px;
+	min-height: 20px;
+	background-color: #999999;
+	top: 40px;
+	left: 0px;
+}
+*/
+
+.map-colors-abroad:after {
+	font-family: "FontAwesome";
+	font-size: 20px;
+    content: "";			
+	position: absolute;
+	display: block;
+	padding: 10px;
+	min-height: 20px;
+	background-color: #2ecc71;
+	top: 20px;
+	left: 0px;
+}
+
+.hrefcities{
+	display: block;
+}
+
+
+.jqvmap-label {
+	position: absolute;
+	display: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #292929;
+	color: #ccc;
+	font-family: sans-serif, Verdana;
+	font-size: smaller;
+	padding: 6px;
+}
+
+.jqvmap-label strong {
+	color:#fff;	
+	display:inline-block
+}
+
+.jqvmap-label ul {
+	margin:0;
+	text-align:left;
+	padding:2px 10px 2px 20px;
+}
+
+.jqvmap-zoomin, .jqvmap-zoomout {
+	position: absolute;
+	left: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #000000;
+	padding: 3px;
+	color: white;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	line-height: 10px;
+	text-align: center;
+}
+
+.jqvmap-zoomin {
+	top: 10px;
+}
+
+.jqvmap-zoomout {
+	top: 30px;
+}
+
+.jqvmap-region {
+  cursor: pointer;
+}
+
+.jqvmap-ajax_response {
+  width: 100%;
+  height: 500px;
+}

@@ -1,0 +1,710 @@
+<!-- Wrapper -->
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Сайт завода КВТ">
+
+    <!-- Favicons -->
+    <link rel="icon" href="img/favicon.ico">
+
+    <!-- - Стандартный значок - -->
+    <!-- <link rel="icon" type="image/x-icon" href="/name.ico"> -->
+    <!-- - Рекомендуемый формат favicon - -->
+    <!-- <link rel="icon" type="image/png" href="/favicon.png"> -->
+
+    <!-- <! - Значок Apple Touch (не менее 200x200px) -> -->
+    <!-- <link rel="apple-touch-icon" href="/custom-icon.png"> -->
+
+    <!-- <! - Чтобы запустить веб-приложение в полноэкранном режиме -> -->
+    <!-- <meta name="apple-mobile-web-app-able" content="yes"> -->
+
+    <!-- <! - Стиль строки состояния (см. Поддерживаемые метатеги ниже для доступных значений) -> -->
+    <!-- <! - Не действует, если у вас нет предыдущего метатега -> -->
+    <!-- <meta name="apple-mobile-web-app-status-bar-style"content="black"> -->
+
+    <link rel="preload" href="fonts/play/Play-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/play/Play-Regular.woff" as="font">
+    <!-- <link rel="preload" href="fonts/play/.woff2" as="font">
+    <link rel="preload" href="fonts/play/.woff2" as="font"> -->
+
+    
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header id="header">
+        <!-- Header meta -->
+        <div class="header_meta">
+            <div class="container">
+                <!-- Useful links -->
+                <div class="useful_links languages">
+                    <span class="useful_links_item"><i class="fa fa-globe"></i></span>
+                    <span class="useful_links_item">RU</span>
+                    <span class="useful_links_item"><a href="#">EN</a></span>
+                </div><!-- End Useful links -->
+                <div class="useful_links">
+                    <span class="useful_links_item">
+                        <a href="gallery_albums.html" title="Фотогалерея"><i class="fa fa-picture-o"></i><span>фото</span></a>
+                    </span>
+                    <span class="useful_links_item">
+                        <a href="video.html" title="Видео"><i class="fa fa-video-camera"></i><span>видео</span></a>
+                    </span>
+                    <span class="useful_links_item">
+                        <a href="#0" id="modal-trigger" data-type="cd-modal-trigger"><i class="fa fa-book"></i><span>библиотека</span></a>
+                    </span>
+                </div><!-- End Useful links -->
+                <!-- Top menu-->
+                <nav class="top_navigation">
+                    <a id="touch-search" class="top_search_toggle"><i class="fa fa-search"></i></a>
+                    <ul class="menu menu-search">
+                        <li class="search_icon_form">
+                            <div class="sub-search">
+                                <form action="/{$language}/search/search_do/" method="get" autocomplete="on">
+                                    <input class="search" name="search_string" type="search" placeholder="Я ищу...">
+                                    <button type="submit" value="Найти"></button>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </nav><!-- End Top input  -->
+            </div>
+        </div><!-- End Header meta -->
+        <!-- Header main -->
+        <div id="header_main" class="sticky header_main">
+            <div class="container">
+                <!-- Logo -->
+                <div class="site_brand">
+                    <a href="index.html" title="Электротехнический завод">
+                        <img class="logo-image" alt="Логотип" src="img/kvt.svg">
+                        <div class="subtitle">Электротехнический завод</div>
+                    </a>
+                </div><!-- End Logo -->
+                <!-- Site navigation -->
+                <nav class="site_navigation">
+                    <a id="touch-menu" class="mobile-menu"><i class="fa fa-reorder"></i></a>
+                    <ul class="menu menu-main">
+                        <li class="menu-item-has-children"><a href="#">Производство<div class="subtitle">о заводе</div></a>
+                            <ul class="sub-menu">
+                                <li><a href="history.html">История предприятия</a></li>
+                                <li><a href="info-page.html">Миссия</a></li>
+                                <li><a href="info-page.html">Политика качества</a></li>
+                                <li><a href="info-page.html">Политика конфиденциальности</a></li>
+                                <li><a href="laboratory.html">Лаборатория</a></li>
+                                <li><a href="info-page.html">РСК</a></li>
+                                <li><a href="video.html">Видео о заводе</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children has_dt_mega_menu"><a href="shop.html">Продукция<div class="subtitle">весь ассортимент</div></a>
+                            <a id="touch-submenu-cat" class="mobile-submenu" href="#"></a>
+                            <ul class="dt_mega_menu sub-menu-cat">
+                                <li class="dt_mega_menu__products">
+                                    <!-- Web version -->
+                                    <div class="widget widget__webcat">
+                                        <div class="widget_title"><h2>Электронный каталог</h2></div>
+                                        <div class="tb_widget_categories">
+                                          <ul>
+                                              <li><a href="#">Кабельные наконечники</a></li>
+                                              <li><a href="#">Болтовые соединители</a></li>
+                                              <li><a href="#">Изолированные наконечники</a></li>
+                                              <li><a href="#">Втулочные наконечники</a></li>
+                                              <li><a href="#">Изолированные зажимы</a></li>
+                                              <li><a href="#">Кабельные муфты «КВТ»</a></li>
+                                              <li><a href="#">Компоненты кабельных муфт</a></li>
+                                              <li><a href="#">Наборы термоусадочных трубок</a></li>
+                                              <li><a href="#">Клеевая термоусадочная трубка</a></li>
+                                              <li><a href="#">Термоусадочные трубки, трубки ТУТ</a></li>
+                                              <li><a href="#">Высоковольтные термоусадочные трубки</a></li>
+                                              <li><a href="#">Обжимной инструмент: пресс-клещи, кримперы, прессы ПГР</a></li>
+                                              <li><a href="#">Ножницы для резки кабеля и провода</a></li>
+                                              <li><a href="#">Инструмент для снятия изоляции: стрипперы, ножи монтерские</a></li>
+                                              <li><a href="#">Гидравлические помпы (насосы)</a> </li>
+                                              <li><a href="#">Шиногибы, шинорезы, шинодыры</a></li>
+                                              <li><a href="#">Домкраты гидравлические</a></li>
+                                              <li><a href="#">Инструмент для пробивки отверстий</a></li>
+                                              <li><a href="#">Диэлектрический инструмент</a></li>
+                                              <li><a href="#">Слесарно-монтажный инструмент</a></li>
+                                              <li><a href="#">Сумки, пояса и наборы инструментов</a></li>
+                                              <li><a href="#">Протяжка кабеля, мини УЗК</a></li>
+                                              <li><a href="#">Сжимы ответвительные</a></li>
+                                              <li><a href="#">Арматура для СИП</a></li>
+                                              <li><a href="#">Инструмент для монтажа СИП и ВЛ</a></li>
+                                              <li><a href="#">Автоматическое оборудование и наконечники GLW</a></li>
+                                              <li><a href="#">Стяжки кабельные стальные</a></li>
+                                              <li><a href="#">Скобы кабельные крепежные</a></li>
+                                              <li><a href="#">Металлорукав и фитинги</a></li>
+                                              <li><a href="#">Мультиметры и приборы КВТ</a></li>
+                                          </ul>
+                                        </div>
+                                    </div><!-- End Timeline widet -->
+
+                                    <!-- Print version -->
+                                    <div class="widget widget__printcat">
+                                        <div class="widget_title"><h2>Печатные каталоги</h2></div>
+                                        <div class="tb_widget_banner_125">
+                                            <a href="http://themeforest.net/user/different-themes/portfolio?ref=CodeoStudio" target="_blank">
+                                                <img src="img/cat_cover/cover_cablearm.jpg" alt="Post">
+                                            </a>
+                                            <a href="http://themeforest.net/user/different-themes/portfolio?ref=CodeoStudio" target="_blank">
+                                                <img src="img/cat_cover/cover_thermo.jpg" alt="Post">
+                                            </a>
+                                            <a href="http://themeforest.net/user/different-themes/portfolio?ref=CodeoStudio" target="_blank">
+                                                <img src="img/cat_cover/cover_tools.jpg" alt="Post">
+                                            </a>
+                                            <a href="http://themeforest.net/user/different-themes/portfolio?ref=CodeoStudio" target="_blank">
+                                                <img src="img/cat_cover/cover_short.jpg" alt="Post">
+                                            </a>
+                                            <a href="http://themeforest.net/user/different-themes/portfolio?ref=CodeoStudio" target="_blank">
+                                                <img src="img/cat_cover/cover_fortis.jpg" alt="Post">
+                                            </a>
+                                        </div>
+                                    </div><!-- End Banners -->
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="sales.html">Где купить<div class="subtitle">дистрибьюторы</div></a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакты<div class="subtitle">будь на связи</div></a>
+                        </li>
+                        <li class="menu-item-has-children has_cart_list">
+                            <a href="shop.html"><i class="fa fa-lightbulb-o"></i> Новинки!<div class="subtitle">самое актуальное</div> </a>
+                            <a id="touch-submenu-newprod" class="mobile-submenu"></a>
+                            <div class="cart_content sub-menu-newprod">
+                                <div class="widget_shopping_cart_content">
+                                    <ul class="cart_list product_list_widget">
+                                        <!-- Shop item -->
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/ksg-color-ico.jpg" alt="Image">
+                                                <div class="cart_content">
+                                                    <span>Модель товара</span>
+                                                    <span>КГС</span>
+                                                </div> 
+                                            </a>
+                                        </li><!-- End Shop item -->
+                                        <!-- Shop item -->
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/colorit-ico.jpg" alt="Image">
+                                                <div class="cart_content">
+                                                    <span>Модель товара</span>
+                                                    <span>Набор колорит</span>
+                                                </div> 
+                                            </a>
+                                        </li><!-- End Shop item -->
+                                         <!-- Shop item -->
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/u-ico.jpg" alt="Image">
+                                                <div class="cart_content">
+                                                    <span>Модель товара</span>
+                                                    <span>Набор колорит</span>
+                                                </div> 
+                                            </a>
+                                        </li><!-- End Shop item -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav><!-- End Site navigation -->
+            </div>
+        </div><!-- End Header main -->
+    </header><!-- End Header -->
+</body></html>
+
+
+<div class="wide_slider">
+    <ul>
+        <li>
+            <a href="#"><img src="img/banner_gsm.jpg" alt="Slider"></a>
+        </li>   
+        <li>
+            <a href="#"><img src="img/banner-pkvsh6.jpg" alt="Slider"></a>
+        </li> 
+        <li>
+            <a href="#"><img src="img/banner-pkvsh6.jpg" alt="Slider"></a>
+        </li> 
+        <li>
+            <a href="#"><img src="img/banner_gsm.jpg" alt="Slider"></a>
+        </li> 
+        <li>
+            <a href="#"><img src="img/banner-pkvsh6.jpg" alt="Slider"></a>
+        </li>  
+    </ul> 
+</div>  
+
+
+
+
+<main>
+	<div class="container">
+		
+		<h1 class="visually-hidden">Электротехнический завод</h1>
+<!-- Top reviews -->
+<div class="panel_title">
+    <div>
+        <h2><a href="news_list.html">Что нового?</a></h2>
+    </div>
+</div><!-- End Panel title -->
+<div class="news_list">
+    <div class="news_item">
+        <!-- Top review -->
+        <div class="top_review">
+            <div class="item_content">
+                <a class="hover_effect" href="news_item.html">
+                    <div class="result"><i class="fa fa-info-circle"></i></div>
+                    <img src="img/ico_energy_expo.jpg" alt="Post" class="visible animated">
+                </a>
+                <span class="default">Мероприятие</span>
+                <span class="post_date"><i class="fa fa-clock-o"></i>20 октября, 2017</span>
+                <h3><a href="post_single.html">Energy EXRO</a></h3>
+                <p><a href="post_single.html">C 10  по 13 октября на территории Республики Беларусь
+                   состоялся XXII Белорусский энергетический экологический форум (EnergyExpo)</a></p>
+            </div>
+            <div class="transition_line"></div>
+        </div><!-- End Top review -->
+    </div>
+    <div class="news_item">
+        <!-- Top review -->
+        <div class="top_review">
+            <div class="item_content">
+                <a class="hover_effect" href="news_item.html">
+                    <div class="result"><i class="fa fa-info-circle"></i></div>
+                    <img src="img/ico_pkvsh6.jpg" alt="Post" class="visible animated">
+                </a>
+                <span class="default">Новинка</span>
+                <span class="post_date"><i class="fa fa-clock-o"></i>20 октября, 2017</span>
+                <h3><a href="post_single.html">Универсальный инструмент ПКВш-6</a></h3>
+            </div>
+            <div class="transition_line"></div>
+        </div><!-- End Top review -->
+    </div>
+    <div class="news_item">
+        <!-- Top review -->
+        <div class="top_review">
+            <div class="item_content">
+                <a class="hover_effect" href="news_item.html">
+                    <div class="result"><i class="fa fa-info-circle"></i></div>
+                    <img src="img/sportday_ico.jpg" alt="Post" class="visible animated">
+                </a>
+                <span class="default">Мероприятие</span>
+                <span class="post_date"><i class="fa fa-clock-o"></i>20 октября, 2017</span>
+                <h3><a href="post_single.html">День здоровья и спорта: быстрее, выше, сильнее!</a></h3>
+            </div>
+            <div class="transition_line"></div>
+        </div><!-- End Top review -->
+    </div>
+    <div class="news_item">
+        <!-- Top review -->
+        <div class="top_review">
+            <div class="item_content">
+                <a class="hover_effect" href="news_item.html">
+                    <div class="result"><i class="fa fa-info-circle"></i></div>
+                    <img src="img/ico_tt175.jpg" alt="Post" class="visible animated">
+                </a>
+                <span class="default">Путешествие КВТ</span>
+                <span class="post_date"><i class="fa fa-clock-o"></i>20 октября, 2017</span>
+                <h3><a href="post_single.html">Термоусадочная трубка ТТ-175</a></h3>
+            </div>
+            <div class="transition_line"></div>
+        </div><!-- End Top review -->
+    </div>
+</div><!-- End Top reviews -->
+<!-- Layout post 2 -->
+<div class="panel_title">
+    <div>
+        <h2><a href="video.html">Новые видео</a></h2>
+    </div>
+</div><!-- End Panel title -->
+<div class="video_list">
+    <div class="video_item layout_post_2">
+        <div class="item_thumb">
+            <div class="thumb_icon">
+                <a href="post_single.html"><i class="fa fa-video-camera"></i></a>
+            </div>
+            <div class="thumb_hover">
+                <a href="post_single.html"><img src="img/video-ico1.jpg" alt="Post" class="visible animated"></a>
+            </div>
+            <span class="default">Путешествие КВТ</span>
+        </div>
+        <div class="item_content">
+            <h3><a href="post_single.html">По дороге на выставку ENERGY EXPO 2017. (Часть 1. Минск)</a></h3>
+            <div class="anons">
+                <p>Новый модернизированный рюкзак монтажника С-07 (КВТ). Описание и характеристики. По дороге на выставку ENERGY EXPO 2017. (Часть 1. Минск)</p>
+                <p>Новый модернизированный рюкзак монтажника С-07 (КВТ). Описание и характеристики. По дороге на выставку ENERGY EXPO 2017. (Часть 1. Минск)</p>
+                <p>Новый модернизированный рюкзак монтажника С-07 (КВТ). Описание и характеристики. По дороге на выставку ENERGY EXPO 2017. (Часть 1. Минск)</p>
+            </div>    
+            <div class="item_meta clearfix">
+                <span class="meta_date">20 октября, 2017</span>
+            </div>
+        </div>
+    </div><!-- End Layout post 1 -->
+    <div class="video_item layout_post_2">
+        <div class="item_thumb">
+            <div class="thumb_icon">
+                <a href="post_single.html"><i class="fa fa-video-camera"></i></a>
+            </div>
+            <div class="thumb_hover">
+                <a href="post_single.html"><img src="img/video-ico2.jpg" alt="Post" class="visible animated"></a>
+            </div>
+            <span class="default">Мероприятие</span>
+        </div>
+        <div class="item_content">
+            <h3><a href="post_single.html">КВТ на ENERGY EXPO 2017. (Часть 2. Минск) </a></h3>
+            <p>10  по 13 октября на территории Республики Беларусь состоялся XXII Белорусский энергетический экологический форум, в рамках которого проходила специализированная выставка «Энергетика. Экология. Энергосбережение. Электро» (EnergyExpo2017).Представители завода КВТ приняли участие в выставке, сделали обзор продукции торговой марки КВТ на семинаре и представили новинки продукции на стенде торгового дома МТИ-Электро http://mti.by</p>
+            <div class="item_meta clearfix">
+                <span class="meta_date">14 октября, 2017</span>
+            </div>
+        </div>
+    </div><!-- End Layout post 1 -->
+    <div class="video_item layout_post_2">
+        <div class="item_thumb">
+            <div class="thumb_icon">
+                <a href="post_single.html"><i class="fa fa-video-camera"></i></a>
+            </div>
+            <div class="thumb_hover">
+                <a href="post_single.html"><img src="img/video-ico3.jpg" alt="Post" class="visible animated"></a>
+            </div>
+            <span class="default">Мероприятие</span>
+        </div>
+        <div class="item_content">
+            <h3><a href="post_single.html">Обзор новинок инструмента: пресс-клещи для обжима ПКВк-16т (Часть 3. Минск)</a></h3>
+            <p>Универсальный инструмент для опрессовки одинарных и двойных втулочных наконечников с торцевой матрицей - ПКВк-16т. Обзор новинки на выставке Energy Expo 2017</p>
+            <div class="item_meta clearfix">
+                <span class="meta_date">13 октября, 2017</span>
+            </div>
+        </div>
+    </div><!-- End Layout post 1 -->
+    <div class="video_item layout_post_2">
+        <div class="item_thumb">
+            <div class="thumb_icon">
+                <a href="post_single.html"><i class="fa fa-video-camera"></i></a>
+            </div>
+            <div class="thumb_hover">
+                <a href="post_single.html"><img src="img/video-ico3.jpg" alt="Post" class="visible animated"></a>
+            </div>
+            <span class="default">Мероприятие</span>
+        </div>
+        <div class="item_content">
+            <h3><a href="post_single.html">Обзор новинок инструмента: пресс-клещи для обжима ПКВк-16т (Часть 3. Минск)</a></h3>
+            <p>Универсальный инструмент для опрессовки одинарных и двойных втулочных наконечников с торцевой матрицей - ПКВк-16т. Обзор новинки на выставке Energy Expo 2017</p>
+            <div class="item_meta clearfix">
+                <span class="meta_date">13 октября, 2017</span>
+            </div>
+        </div>
+    </div><!-- End Layout post 1 -->
+</div><!-- End Layout post 2 -->
+<!-- Products -->
+<div class="panel_title">
+    <div>
+        <h2><a href="blog.html">Новинки</a></h2>
+    </div>
+</div><!-- End Panel title -->
+<ul class="newproducts">
+    <!-- Product first -->
+    <li class="product">
+        <!-- Thumb -->
+        <div class="item_thumb">
+            <span class="onsale">Новинка!</span>
+            <div class="thumb_descr">
+                <a href="shop_single.html"><h3>Портативный ручной стриппер с функцией резки</h3></a>
+            </div>
+            <div class="thumb_hover">
+                <a href="shop_single.html"><img src="img/ico500x500/ws01a.jpg" alt="Post"></a>
+            </div>
+        </div><!-- End Thumb -->
+        <!-- Info -->
+        <div class="info">
+            <span class="type">
+                <span class="amount">Модель товара:</span>
+            </span>
+        </div><!-- End Info -->
+        <a href="shop_single.html" class="btn btn_lightgray">WS-01A</a>
+        <div class="descr_mobile">
+            <a href="shop_single.html">Портативный ручной стриппер с функцией резки</a>
+        </div>
+    </li><!-- End Product first -->
+    <!-- Product -->
+    <li class="product">
+        <!-- Thumb -->
+        <div class="item_thumb">
+            <div class="thumb_descr">
+                <a href="shop_single.html"><h3>Портативный ручной стриппер с функцией резки</h3></a>
+            </div>
+            <div class="thumb_hover">
+                <a href="#"><img src="img/ico500x500/ws01c.jpg" alt="Post"></a>
+            </div>
+        </div><!-- End Thumb -->
+        <!-- Info -->
+        <div class="info">
+            <span class="type">
+                <span class="amount">Модель товара:</span>
+            </span>
+        </div><!-- End Info -->
+        <a href="#" class="btn btn_lightgray">WS-01C</a>
+        <div class="descr_mobile">
+            <a href="shop_single.html">Портативный ручной стриппер с функцией резки</a>
+        </div>
+    </li><!-- End Product -->
+    <!-- Product -->
+    <li class="product">
+        <!-- Thumb -->
+        <div class="item_thumb">
+            <span class="soon">Скоро!</span>
+            <div class="thumb_descr">
+                <a href="shop_single.html"><h3>Портативный ручной стриппер с функцией резки</h3></a>
+            </div>
+            <div class="thumb_hover">
+                <a href="#"><img src="img/ico500x500/ws01d.jpg" alt="Post"></a>
+            </div>
+        </div><!-- End Thumb -->
+        <!-- Info -->
+        <div class="info">
+            <span class="type">
+                <span class="amount">Модель товара:</span>
+            </span>
+        </div><!-- End Info -->
+        <a href="#" class="btn btn_lightgray">WS-01D</a>
+        <div class="descr_mobile">
+            <a href="shop_single.html">Портативный ручной стриппер с функцией резки</a>
+        </div>
+    </li><!-- End Product -->
+    <li class="product">
+        <!-- Thumb -->
+        <div class="item_thumb">
+            <div class="thumb_descr">
+                <a href="shop_single.html"><h3>Портативный ручной стриппер с функцией резки</h3></a>
+            </div>
+            <div class="thumb_hover">
+                <a href="#"><img src="img/ico500x500/ws03a.jpg" alt="Post"></a>
+            </div>
+        </div><!-- End Thumb -->
+        <!-- Info -->
+        <div class="info">
+            <span class="type">
+                <span class="amount">Модель товара:</span>
+            </span>
+        </div><!-- End Info -->
+        <a href="#" class="btn btn_lightgray">WS-03A</a>
+        <div class="descr_mobile">
+            <a href="shop_single.html">Портативный ручной стриппер с функцией резки</a>
+        </div>
+    </li><!-- End Product last -->
+</ul><!-- End Products -->
+					
+	</div>		
+</main>
+
+    <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="col col_3_of_12">
+                    <!-- Widget Text widget -->
+                    <div class="widget">
+                        <div class="widget_title"><h2>О КВТ</h2></div>
+
+                        <p>Электротехническая продукция российского производителя КВТ – это европейское качество с отечественной ценовой доступностью,
+                          надежная техническая поддержка, собственный сервисный центр, возможность приобретения более чем в 70 городах России,
+                          а также в других странах.</p>
+                    </div><!-- End Widget text widget -->
+                    <!-- Widget Social widget -->
+                    <div class="widget">
+                        <div class="widget_title"><h2>Присоединяйся</h2></div>
+
+                        <div class="tb_widget_socialize ">
+                            <a href="https://www.youtube.com/channel/UC8cMDluhHGfxxjIodF5ghRw" target="_blank" class="social-icon">
+                                <img src="img/fb.svg" alt="fb.com">
+                            </a>
+
+                            <a href="https://www.youtube.com/channel/UC8cMDluhHGfxxjIodF5ghRw" target="_blank" class="social-icon">  
+                                <img src="img/youtube.svg" alt="youtube.com">
+                            </a>
+
+                            <a href="https://www.youtube.com/channel/UC8cMDluhHGfxxjIodF5ghRw" target="_blank" class="social-icon">
+                                <img src="img/vk.svg" alt="vk.com">
+                            </a>
+
+                            <a href="https://www.youtube.com/channel/UC8cMDluhHGfxxjIodF5ghRw" target="_blank" class="social-icon">
+                                <img src="img/instagram.svg" alt="instagram.com">
+                            </a>
+                        </div>
+                    </div><!-- End Widget Social widget -->
+                </div>
+                <div class="col col_3_of_12">
+                    <!-- Widget top rated -->
+                    <div class="widget">
+                        <div class="widget_title"><h2>Новости</h2></div>
+
+                        <div class="tb_widget_top_rated clearfix">
+                            <!-- Post item -->
+                            <div class="item clearfix">
+                                <div class="item_thumb clearfix">
+                                    <a href="#"><img src="img/ico_energy_expo.jpg" alt="Post"></a>
+                                </div>
+
+                                <div class="item_content">
+                                    <h4><a href="#">Команда КВТ в Белоруссии</a></h4>
+                                </div>
+
+                                <div class="item_meta clearfix">
+                                    <span class="meta_date">20 октября, 2017</span>
+                                </div>
+                            </div><!-- End Post item -->
+                            <!-- Post item -->
+                            <div class="item clearfix">
+                                <div class="item_thumb clearfix">
+                                    <a href="#"><img src="img/ico_pkvsh6.jpg" alt="Post"></a>
+                                </div>
+
+                                <div class="item_content">
+                                    <h4><a href="#">Новый ПКВШ-6</a></h4>
+                                </div>
+
+                                <div class="item_meta clearfix">
+                                    <span class="meta_date">1 ноября, 2017</span>
+                                </div>
+                            </div><!-- End Post item -->
+                            <!-- Post item -->
+                            <div class="item clearfix">
+                                <div class="item_thumb clearfix">
+                                    <a href="#"><img src="img/ico_tt175.jpg" alt="Post"></a>
+                                </div>
+
+                                <div class="item_content">
+                                    <h4><a href="#">ТТ-175</a></h4>
+                                </div>
+
+                                <div class="item_meta clearfix">
+                                    <span class="meta_date">10 декабря, 2017</span>
+                                </div>
+                            </div><!-- End Post item -->
+                        </div>
+                    </div><!-- End widget top rated -->
+                </div>
+                <div class="col col_3_of_12">
+                    <!-- Widget recent posts -->
+                    <div class="widget">
+                        <div class="widget_title"><h2>Видео</h2></div>
+                        <div class="tb_widget_recent_list clearfix">
+                            <!-- Post item -->
+                            <div class="item clearfix">
+                                <div class="item_thumb">
+                                    <div class="thumb_icon">
+                                        <a href="#"><i class="fa fa-video-camera"></i></a>
+                                    </div>
+
+                                    <div class="thumb_hover">
+                                        <a href="#"><img src="img/video-ico1.jpg" alt="Post"></a>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <h4><a href="#">По дороге на выставку ENERGY EXPO 2017. (Часть 1. Минск)</a></h4>
+
+                                    <div class="item_meta clearfix">
+                                        <span class="meta_date">20 октября, 2017</span>
+                                    </div>
+                                </div>
+                            </div><!-- End Post item -->
+                            <!-- Post item -->
+                            <div class="item clearfix">
+                                <div class="item_thumb">
+                                    <div class="thumb_icon">
+                                        <a href="#"><i class="fa fa-video-camera"></i></a>
+                                    </div>
+
+                                    <div class="thumb_hover">
+                                        <a href="#"><img src="img/video-ico3.jpg" alt="Post"></a>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <h4><a href="#">КВТ на ENERGY EXPO 2017. (Часть 2. Минск)</a></h4>
+
+                                    <div class="item_meta clearfix">
+                                        <span class="meta_date">20 октября, 2017</span>
+                                    </div>
+                                </div>
+                            </div><!-- End Post item -->
+                            <!-- Post item -->
+                            <div class="item clearfix">
+                                <div class="item_thumb">
+                                    <div class="thumb_icon">
+                                        <a href="#"><i class="fa fa-video-camera"></i></a>
+                                    </div>
+
+                                    <div class="thumb_hover">
+                                        <a href="#"><img src="img/video-ico3.jpg" alt="Post"></a>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <h4><a href="#">Обзор новинок инструмента: пресс-клещи для обжима ПКВк-16т (Часть 3. Минск)</a></h4>
+                                    
+                                    <div class="item_meta clearfix">
+                                        <span class="meta_date">20 октября, 2017</span>
+                                    </div>
+                                </div>
+                            </div><!-- End Post item -->
+                        </div>
+                    </div><!-- End Widget recent posts -->
+                </div>
+                <div class="col col_3_of_12">
+                    <div class="widget">
+                        <div class="widget_title"><h2>Информация</h2></div>
+                        <div class="tb_widget_categories tb_widget_categories_footer">
+                            <ul>
+                                <li><a href="#">Каталоги</a></li>
+                                <li><a href="#">Документация на изделия</a></li>
+                                <li><a href="#">Производственные стандарты</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                                <li><a href="#">Статьи и рекомендации</a></li>
+                                <li><a href="#">Сервисный центр</a></li>
+                                <li><a href="#">Сертификаты качества</a></li>
+                                <li><a href="#">Отзывы клиентов</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- End Footer -->
+        <!-- Copyright -->
+        <div id="copyright" role="contentinfo">
+            <div class="container">
+                <p>&copy; 2017 Электротехнический завод КВТ.</p>
+            </div>
+        </div>
+        <!-- End Copyright -->
+        
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+       
+        <script src="js/init.js"></script>  
+        <script src="js/jquery.bxslider.js"></script>
+        <!--script src="js/bxslider.min.js"></script-->                   
+
+        <script src="js/magnific.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js?v=1.1.0"></script>
+
+        <script src="js/viewportchecker.min.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.touchSwipe.min.js"></script>
+        <script src="js/videocarusel.js"></script>
+
+        <script src="js/stacktable.js"></script>
+        <script src="js/menu.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/modernizr.js"></script>  
+        <script src="js/snap.svg-min.js"></script>  
+
+    
+ 
+
+		

@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  padding-right: 0.94em;
+  padding-left: 0.94em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+    display: table;
+}
+
+.container:after,
+.row:after,
+.clearfix:after {
+    clear: both;
+}
+
+.col {
+    position: relative;
+    padding-left: 0.94em;
+    padding-right: 0.94em;
+    margin-bottom: 0.63em;
+    min-height: 0.063em;
+    div p a {
+        color: @color-hoverblue;
+        text-decoration: underline;
+    }    
+}            
+
+.col_3_of_12 {
+    width: 25%;
+}
+
